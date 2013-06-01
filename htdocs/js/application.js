@@ -17,21 +17,19 @@
 
   Clinic = (function() {
     function Clinic(data) {
-      this.fetch = __bind(this.fetch, this);      this.location = data.location;
+      this.location = data.location;
       this.name = data.name;
     }
 
-    Clinic.prototype.fetch = function() {
-      var _this = this;
-
-      return $.getJSON('https://data.cityofchicago.org/api/views/ajzs-akmm.json?callback=?', function(data) {
+    Clinic.fetch = function() {
+      return $.getJSON('https://data.cityofchicago.org/resource/ajzs-akmm.json', function(data) {
         return console.log(data);
       });
     };
 
     return Clinic;
 
-  })();
+  }).call(this);
 
   window.Clinic = Clinic;
 

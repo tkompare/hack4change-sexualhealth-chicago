@@ -1,5 +1,4 @@
 class User
-
 	constructor:(data)->
 		@age = data.age
 		@sex = data.sex
@@ -10,5 +9,5 @@ class User
 				lat : position.coords.latitude
 				lng : position.coords.longitude	
 			cb(@) if cb?
-
+	
 window.User = User
