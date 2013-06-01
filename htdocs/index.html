@@ -21,12 +21,14 @@
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src='js/application.js'></script>
 <script src="//maps.googleapis.com/maps/api/js?sensor=true"></script>
 
 
 <style type="text/css">
 	#map img{max-width:none}
 </style>
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 
 <title>Sexual Health Chicago</title>
@@ -35,11 +37,21 @@
 
 	<!-- ALL YOUR HTML CONTENT ARE BELONG TO HERE -->
 	<div data-role="page" data-style='default' id="home"> 
-		<h1> You are home!</h1>
+		<h1>Welcome</h1>
 		<a href="/#nothome"> go</a>
+		<form>
+		</form>
 	</div>
 
-	<div data-role="page" id="map"> 
+	<div data-role="page" data-style='default' id="about"> 
+		<h1>About</h1>
+			This app is about
+		<form>
+		</form>
+	</div>
+
+
+	<div data-role="page" id="mapframe"> 
 		<h1>map!</h1>
 		<div id=map-width style="display:inline-block; position:relative; width:100%;">
 			<div id=map-ratio style="margin-top:200px;">
@@ -47,10 +59,14 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
 	<div data-role="page"  data-style='default' id="nothome"> 
 		<h1> You are not home!</h1>
 	</div>
+
 <script src="/js/tkmap.4.0.0.js"></script>
 <script src="/js/map.js"></script>
+
 </body>
 </html>
