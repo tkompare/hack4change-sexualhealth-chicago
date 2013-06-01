@@ -6,3 +6,4 @@ TheMap = new TkMap({
 	zoom:14
 });
 TheMap.initMap()
+TheMap.setPanZoom(false);
