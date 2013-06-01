@@ -27,13 +27,14 @@
 <style type="text/css">
 	#map img{max-width:none}
 </style>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 
 <title>Sexual Health Chicago</title>
 </head>
 <body>
 
 	<!-- ALL YOUR HTML CONTENT ARE BELONG TO HERE -->
-	<div data-role="page" id="home"> 
+	<div data-role="page" data-style='default' id="home"> 
 		<h1> You are home!</h1>
 		<a href="/#nothome"> go</a>
 	</div>
@@ -46,6 +47,8 @@
 				</div>
 			</div>
 		</div>
+	<div data-role="page"  data-style='default' id="nothome"> 
+		<h1> You are not home!</h1>
 	</div>
 <script src="/js/tkmap.4.0.0.js"></script>
 <script src="/js/map.js"></script>
