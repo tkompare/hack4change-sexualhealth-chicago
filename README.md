@@ -3,6 +3,8 @@ hack4change-sexualhealth-chicago
 
 Provide young people with accurate sexual health information and resources.
 
+On June 1st and 2nd, 2013, Adler Planetarium hosted a youth-focused National Day of Civic Hacking event. 40+ people came together to work on four issues. One of the issues was the idea of sexual health. Our team of six persons brainstormed, organized ideas, designed, and coded up a mobile web site called "Healthy Sex". Visitors enter their gender and sexual orientation and learn more and explore information their sexual health and find free resources near them in the City of Chicago.
+
 ================================
 
 License
