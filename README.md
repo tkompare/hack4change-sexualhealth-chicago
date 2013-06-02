@@ -7,7 +7,7 @@ Provide young people with accurate sexual health information and resources.
 
 License
 
-Copyright (c) 2013 David Miller (@davidmil), Stewart Lynn (@_lynn), Tom Kompare (@tomkompare), Donya Hooks (donyahooks@hotmail.com), Lisa Jean (ljbaptiste16@gmail.com)
+Copyright (c) 2013 David Miller (@davidmil), Stewart Lynn (@Stuart_Lynn), Tom Kompare (@tomkompare), Donya Hooks (donyahooks@hotmail.com), Lisa Jean (ljbaptiste16@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
