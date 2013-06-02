@@ -1,0 +1,45 @@
+<div class='closest'>
+	<span class='stars'>
+		<% for i in [0...@clinic.averageScore()] : %>
+			★
+		<%end%>
+	</span>
+	<span class='name'><%= @clinic.name%> </span>
+</div>
+
+<div class='addAComent'>
+	<div class='placeholder'>
+		 <span>Share your experince</span>
+	</div>
+	<div class='commentAdder'>
+		<div class='stars'>
+			<span class='star' data-raiting=1>★</span>
+			<span class='star' data-raiting=2>★</span>
+			<span class='star' data-raiting=3>★</span>
+			<span class='star' data-raiting=4>★</span>			
+		</div>
+		<TEXTAREA placeholder='Share your experince'></TEXTAREA>
+		<a class='button'>Submit</a>
+	</div>
+
+</div>
+
+<ul class='clinicList'>
+	<% if @clinic.reviews.reviews.length > 0 : %>
+		<% for review in @clinic.reviews.reviews : %>
+			<li class='review'>
+				<span class='stars'>
+					<% for i in [0...review.score] : %>
+						★
+					<%end%>
+				</span>
+				<span class='name'><%= review.comment%> </span>
+				</a>
+			</li>
+		<%end%>
+	<%else : %>
+		<li class='review'>
+			<span> No comments yet</span>
+		</li>
+	<%end%>
+</ul>

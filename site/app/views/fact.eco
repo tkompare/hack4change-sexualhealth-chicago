@@ -1,0 +1,4 @@
+<a class='cross back'>X</a>
+<p class='factText'><%-@fact.text%></class>
+
+<a  class='button' href='#/questions/<%=@fact.category%>'>Get <%=@fact.category%> Facts</a>

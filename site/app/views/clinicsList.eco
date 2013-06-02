@@ -1,0 +1,25 @@
+<% if @clinics[0] : %>
+<div class='closest'>
+	
+
+	<a href='#/clinics/<%= @clinics[0].slug() %>'>
+			<img src='locationGrey.png'></img>
+			<span class='name'><%= @clinics[0].name%> </span>
+	</a>
+</div>
+<%end%>
+
+<ul class='clinicList'>
+	<% for clinic in @clinics :%>
+		<li class='clinic'>
+			<a href='#/clinics/<%=clinic.slug()%>'>
+			<span class='stars'>
+				<% for i in [0...clinic.averageScore()] : %>
+					★
+				<%end%>
+			</span>
+			<span class='name'><%= clinic.name%> </span>
+			</a>
+		</li>
+	<%end%>
+</ul>

@@ -1,0 +1,14 @@
+<img src='logo.png'></img>
+<form>
+	<select placeholder='gender' class='sex' name='sex'>
+  	<option value="male">Male</option>
+  	<option value="female">Female</option>
+ 	</select>
+ 	<select placeholder='orientation' class='orientation' name='orientation'>
+  	<option value="stright">Straight</option>
+  	<option value="gay">Gay</option>
+  	<option value="bi">Bisexual</option>
+ 	</select>
+
+	<input class='button' value='Get the facts' type='submit'>Get the facts</input>
+</form>

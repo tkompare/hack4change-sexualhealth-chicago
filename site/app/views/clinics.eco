@@ -1,0 +1,13 @@
+<header>
+<img class='logo' src='logo.png'></img> 
+<a class='pointer' style='color:#FF4522;font-weight:800;font-size:30px' href="/#/questions">?</a>
+
+</header>
+
+<div id='map'>
+
+</div>
+
+<div class='content'>
+
+</div>

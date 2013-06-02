@@ -1,0 +1,16 @@
+<header>
+<img class='logo' src='logo.png'></img> 
+<img class='pointer' src='location.png'></img>
+
+</header>
+
+<div class='filters'>
+	<h2>I'm worried about...</h2>
+	<%for filter,index in @filters : %>
+		<input value='<%=filter%>' data-index=<%=index%> data-filter='<%=filter%>' class='filter'></input>
+	<%end%>
+	<a class='addmore'>+ Add more</a>
+</div>
+
+
+<ul class='matches'></ul>

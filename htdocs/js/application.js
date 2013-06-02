@@ -17,13 +17,65 @@
 
   Clinic = (function() {
     function Clinic(data) {
-      this.location = data.location;
-      this.name = data.name;
+      this.sendReview = __bind(this.sendReview, this);
+      this.setCurrent = __bind(this.setCurrent, this);
+      this.addToMap = __bind(this.addToMap, this);
+      this.getReviews = __bind(this.getReviews, this);
+      var key, val;
+
+      console.log("creating with ", data);
+      for (key in data) {
+        val = data[key];
+        this[key] = val;
+      }
     }
+
+    Clinic.prototype.getReviews = function() {
+      return $.getJSON("");
+    };
 
     Clinic.fetch = function() {
       return $.getJSON('https://data.cityofchicago.org/resource/ajzs-akmm.json', function(data) {
-        return console.log(data);
+        var clinic, clinics;
+
+        clinics = (function() {
+          var _i, _len, _results;
+
+          _results = [];
+          for (_i = 0, _len = data.length; _i < _len; _i++) {
+            clinic = data[_i];
+            _results.push(new Clinic(clinic));
+          }
+          return _results;
+        })();
+        Clinic.all = clinics;
+        return console.log("clinics are ", clinics);
+      });
+    };
+
+    Clinic.renderClinicList = function() {
+      var clinic, _i, _len, _ref, _results;
+
+      _ref = Clinic.all;
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        clinic = _ref[_i];
+        _results.push($("#clinicList ul").append("<li>" + clinic.name + "</li>"));
+      }
+      return _results;
+    };
+
+    Clinic.prototype.addToMap = function(map) {};
+
+    Clinic.prototype.setCurrent = function() {};
+
+    Clinic.prototype.sendReview = function(raiting, comment) {
+      return $.post('/addReview', {
+        clinic: this,
+        review: {
+          raiting: raiting,
+          comment: comment
+        }
       });
     };
 
